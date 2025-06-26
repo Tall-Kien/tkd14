@@ -14,6 +14,38 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+<style>
+.dropdown-menu {
+    background-color: transparent !important; 
+    box-shadow: none !important;             
+    border: none !important;               
+}
+
+.dropdown-menu .dropdown-item {
+    color: white; 
+    background-color: transparent !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important; 
+    color: white;
+}
+
+@media (max-width: 767.98px) {
+    .dropdown-menu .dropdown-item {
+        color: #333 !important;
+        font-size: 0.9rem !important; /* or try 0.8rem for even smaller */
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+        background-color: rgba(0, 0, 0, 0.05) !important;
+        color: #000 !important;
+    }
+}
+
+</style>
+
     </head>
     <body>
         <!-- Navigation-->
@@ -29,8 +61,20 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Club.html">Le Club</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Resultats.html">Resultats</a></li>
+                    <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-lg-3 py-3 py-lg-4" href="Club.html" id="clubDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Le Club
+            </a>
+            <ul class="dropdown-menu transparent-dropdown" aria-labelledby="clubDropdown">
+                <li><a class="dropdown-item navbar-brand" href="Club.html#Historique">Historique</a></li>
+                <li><a class="dropdown-item navbar-brand" href="Club.html#Instructeurs">Instructeurs diplomés</a></li>
+                <li><a class="dropdown-item navbar-brand" href="Club.html#Resultats">Résultats</a></li>
+                 <li><a class="dropdown-item navbar-brand" href="Club.html#Sponsors">Nos sponsors</a></li>
+            </ul>
+        </li>
+                        
+                       
+                    
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Inscription.html">Inscription et horaire</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Contact.html">Contact</a></li>
                     </ul>
@@ -38,6 +82,7 @@
             </div>
         </nav>
         <!-- Page Header-->
+
         <header class="masthead" style="background-image: url('assets/img/Accueil.jpg')">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -62,6 +107,111 @@
                     
                    <p>Le Taekwondo est un art martial d'origine sud-coréenne, dont le nom peut se traduire par « La voie des pieds et des poings ». </p>
                
+ <h2 class="section-heading">Valeurs et code moral du Taekwondo</h2>
+<p>
+<ul>
+    <li><i>Fair-Play : </i>"C'est accepter loyalement les règles"</li>
+    <li><i>Humilité : </i>"C'est reconnaître ses limites et ses capacités en faisant preuve de modestie."</li>
+    <li><i>Loyauté : </i>"C'est être fidèle à ses engagements, au respect des règles de l'honneur et de la probité."</li>
+    <li><i>Maîtrise de soi :</i>"C'est la qualité d'une personne à se dominer, à contrôler ses émotions."</li>
+    <li><i>Persévérance : </i>"C'est la qualité d'une personne qui fait preuve d'opiniâtreté, de constance, de ténacité, d'acharnement."</li>
+    <li><i>Respect : </i>"C'est le sentiment qui porte à accorder à quelqu'un de la considération. Il consiste à ne pas vexer, blesser moralement une personne."</li>
+</ul>
+</p>
+ <h2 class="section-heading">Nos sponsors</h2>
+                        
+                      
+                        <br />
+
+
+<div class="container my-5">
+  <div class="row gx-4 gy-4 text-center">
+
+    <div class="col-12 col-md-6">
+      <div class="bg-light rounded p-2">
+        <div class="fw-semibold mb-1">Métrologie Conseil Sourcing</div>
+        <img src="assets/img/MetrologieConseilSourcing.png"
+             class="img-fluid w-100"
+             style="max-height: 250px; object-fit: contain;"
+             alt="Métrologie Conseil Sourcing">
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="bg-light rounded p-2">
+        <div class="fw-semibold mb-1">Boucherie les 3 pommes</div>
+        <img src="assets/img/BoucherieLes3Pommes.jpg"
+             class="img-fluid w-100"
+             style="max-height: 250px; object-fit: contain;"
+             alt="Boucherie les 3 pommes">
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="bg-light rounded p-2">
+        <div class="fw-semibold mb-1">Carreleur SARL As du Carreau (Le Tronquay)</div>
+        <img src="assets/img/As_Carreau.png"
+             class="img-fluid w-100"
+             style="max-height: 250px; object-fit: contain;"
+             alt="Carreleur SARL As du Carreau">
+      </div>
+    </div>
+
+
+    <div class="col-12 col-md-6">
+      <div class="bg-light rounded p-2">
+        <div class="fw-semibold mb-1">Garage Remorquage assistance Valy (Aure sur Mer)</div>
+        <img src="assets/img/Vally.png"
+             class="img-fluid w-100"
+             style="max-height: 250px; object-fit: contain;"
+             alt="Garage Remorquage assistance Valy">
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="bg-light rounded p-2">
+        <div class="fw-semibold mb-1">Boucherie Tradition du Terroir (Trevieres)</div>
+        <img src="assets/img/Tradition_Terroir.png"
+             class="img-fluid w-100"
+             style="max-height: 250px; object-fit: contain;"
+             alt="Boucherie Tradition du Terroir">
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="bg-light rounded p-2">
+        <div class="fw-semibold mb-1">Cabinet assurance Swiss Life (St Vigor le Grand)</div>
+        <img src="assets/img/SwissLife.png"
+             class="img-fluid w-100"
+             style="max-height: 250px; object-fit: contain;"
+             alt="Swiss Life">
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="bg-light rounded p-2">
+        <div class="fw-semibold mb-1">Drive Béton (Bretteville l'orgueilleuse)</div>
+        <img src="assets/img/Drive_Beton.jpg"
+             class="img-fluid w-100"
+             style="max-height: 250px; object-fit: contain;"
+             alt="Drive Béton">
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="bg-light rounded p-2">
+        <div class="fw-semibold mb-1">Maçonnerie Lefrançois</div>
+        <img src="assets/img/Maconnerie_LeFrancois.png"
+             class="img-fluid w-100"
+             style="max-height: 250px; object-fit: contain;"
+             alt="Maçonnerie Lefrançois">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
                 </div>
             </div>
         </div>
